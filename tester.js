@@ -1,4 +1,4 @@
-<!--##Author - Arnav Bhalla-->
+<!--Author - Arnav Bhalla-->
 <!--30173316-->
 document.addEventListener('DOMContentLoaded', function() {
     const checkButton = document.getElementById('checkButton');
