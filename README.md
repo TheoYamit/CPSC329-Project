@@ -18,6 +18,11 @@ This is a simple web application that checks the strength of a password and esti
 
 4. The application will provide feedback on the password strength and an estimated time to crack it.
 
+## Author
+
+- Arnav Bhalla
+- Student Number: 30173316
+
 ## Files
 
 - `index.html`: The main HTML file for the web application.
