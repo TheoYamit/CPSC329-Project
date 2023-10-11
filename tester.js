@@ -20,7 +20,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 const commonPasswords = data.split('\n');
 
                 // Interpret the strength score
+                const minLength = 8;
+                const hasUppercase = /[A-Z]/.test(password);
+                const hasLowercase = /[a-z]/.test(password);
+                const hasNumbers = /\d/.test(password);
+                const hasSpecialChars = /[!@#$%^&*]/.test(password);
 
+                let strength = 0;
+
+                if (password.length >= minLength) {
+                    strength++;
+                }
+                if (hasUppercase) {
+                    strength++;
+                }
+                if (hasLowercase) {
+                    strength++;
+                }
+                if (hasNumbers) {
+                    strength++;
+                }
+                if (hasSpecialChars) {
+                    strength++;
+                }
+
+                let strengthText = '';
+                switch (strength) {
+                    case 1:
+                        strengthText = 'Weak';
+                        break;
+                    case 2:
+                        strengthText = 'Moderate';
+                        break;
+                    case 3:
+                        strengthText = 'Strong';
+                        break;
+                    case 4:
+                        strengthText = 'Very Strong';
+                        break;
+                    case 5:
+                        strengthText = 'Excellent';
+                        break;
+                    default:
+                        strengthText = 'Very Weak';
+                        break;
+                }
                 // Estimate time to crack with a brute-force attack
                 const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
                 const passwordLength = password.length;
@@ -43,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 timeToCrackIndicator.textContent = `Estimated Time to Crack: ${timeToCrackText}`;
+                strengthIndicator.textContent = `Password Strength: ${strengthText}`;
 
                 // Check against the list of common passwords
                 if (commonPasswords.includes(password)) {
