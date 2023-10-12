@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const commonPasswords = data.split('\n');
 
                 // Interpret the strength score
-                const minLength = 8;
+                const minLength = 10;
                 const hasUppercase = /[A-Z]/.test(password);
                 const hasLowercase = /[a-z]/.test(password);
                 const hasNumbers = /\d/.test(password);
