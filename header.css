@@ -28,6 +28,23 @@
     font-family: Roboto, Arial;
 }
 
+@media (max-width:960px) {
+    #logo-img {
+        width: 150px;
+    }
+    .first-button-on-nav {
+        margin-right: 15px;
+
+    }
+    .nav-button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+}
+
+
 .nav-button:hover{
     background-color:#1d4c6d;
     transition: all 0.3s ease;
@@ -52,3 +69,4 @@
 .nav-button:hover i {
     animation: bounce-animation 0.7s;
 }
+
