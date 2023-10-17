@@ -13,8 +13,9 @@
     margin: 0 2%; 
 }
 
-.first-button-on-nav {
-    margin-right: 30px;
+.nav-button-wrapper {
+    display:inline-block;
+    margin-right: 20px;
 }
 
 .nav-button {
@@ -46,6 +47,7 @@
     background-color:#1d4c6d;
     transition: all 0.3s ease;
 }
+
 
 @keyframes bounce-animation {
     0%, 20%, 50%, 80%, 100% {
