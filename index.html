@@ -7,7 +7,7 @@
         <meta name = "viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         
-        <link rel="stylesheet" href="cssFiles/general_styles.css">
+        <link rel="stylesheet" href="cssFiles/generalStyles.css">
         <link rel="stylesheet" href="cssFiles/header.css"> 
         <link rel="stylesheet" href="cssFiles/home.css">
         <link rel="icon" type="image/png" href="images/SaltedHB.png">
@@ -56,10 +56,28 @@
         </header>
 
         <main>
-            <div class="banner">
-                <h1 id="banner-header">Welcome to our project!</h1>
+            <div id="banner" class="banner">
+                <h1 id="banner-header">Welcome to Group 1's CPSC29 project!</h1>
                 <p id="banner-info">This website aims to teach you about <span id="banner-dynamic-words"></span>.</p>
+                <i id="banner-key" class="fa-solid fa-key fa-8x" style="color: #091211; display: none;"></i>
+                <i id="banner-lock" class="fa-solid fa-lock fa-8x" style="color: #091211; display: none"></i>
             </div>
+            
+            <section id="team-section" class="team-section container" style="margin-right: 130px; margin-top: 50px;">
+                <h1 id="team-header">Group 1 Members:</h1>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-6">
+                        <p class="team-member">Tania Rizwan</p>
+                        <p class="team-member">Theodore Yamit</p>
+                        <p class="team-member">Casey Sivec</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="team-member">Aria Sharifnia</p>
+                        <p class="team-member">Aishan Irfan</p>
+                        <p class="team-member">Arnav Bhalla</p>
+                    </div>
+                </div>
+            </section>
             
         </main>
 
@@ -70,6 +88,7 @@
         <script src="https://kit.fontawesome.com/2fb04333f0.js" crossorigin="anonymous"></script>
         
         <script src="jsFiles/bannerDynamicWords.js"></script>
+        <script src="jsFiles/homeScrollFadeIn.js"></script>
 
     </body>
 </html>
