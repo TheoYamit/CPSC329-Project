@@ -6,3 +6,17 @@
 body {
     background-color: #091211;
 }
+
+h1 {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Cera Round Pro Bold"
+}
+
+p {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Cera Round Pro Bold"
+}
