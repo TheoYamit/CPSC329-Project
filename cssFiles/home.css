@@ -66,6 +66,11 @@
 
 #team-header {
     font-size: 80px;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+
 }
 
 #team-section {
