@@ -3,17 +3,30 @@
 const words = ["security", "passwords", "hashing", "salting"];
 const wordElement = document.getElementById("banner-dynamic-words");
 let index = 0;
+let charIndex = 0;
 
-function wordChange() {
-    wordElement.classList.add("fade-out-effect");
 
-    setTimeout(() => {
+function typingWordAnimation() {
 
-        // Modulus is used here to reloop the array. Will start again from index 0 and cycle through the words.
-        index = (index + 1) % words.length;
-        wordElement.innerText = words[index];
-        wordElement.classList.remove("fade-out-effect");
-    }, 500);
+    // Making sure we are still on the current word.
+    if (charIndex < words[index].length) {
+        // Then adding one character of the word at a time.
+        // Can do this since were basically just dealing with 2D Arrays.
+        wordElement.textContent += words[index][charIndex];
+        charIndex++;
+        setTimeout(typingWordAnimation, 120);
+
+    // Move onto next word
+    } else {
+        setTimeout(() => {
+            wordElement.textContent = "";
+            index = (index + 1) % words.length;
+            charIndex = 0;
+            typingWordAnimation();
+
+        }, 2000);
+        
+    }
 }
 
-setInterval(wordChange, 2500);
+typingWordAnimation();
