@@ -30,7 +30,7 @@
 #banner-header {
    font-size: 70px;
    position: relative;
-   top: 100px;
+   top: 85px;
    left: 635px;
    width: 800px;
    
@@ -54,19 +54,6 @@
     border-radius: 5px;                            
 }
 
-#banner-key {
-    position: relative;
-
-    top: 200px;
-    left: 200px;
-}
-
-#banner-lock {
-    position: relative;
-    top: 200px;
-    left: 400px;
-}
-
 
 @keyframes shake {
     0% {transform: translate(0, 0) rotate(0);}
@@ -82,7 +69,7 @@
     position: relative;
     bottom: 400px;
     left: 50px;
-    animation: shake 1.5s infinite;
+    animation: shake 1s infinite;
     animation-timing-function: ease-in-out;
 }
 
@@ -93,6 +80,7 @@
     border-radius: 20px;
     padding: 20px;
     display: inline-block;
+    margin-left: 90px;
 
 }
 
