@@ -20,7 +20,7 @@
     margin-right: 20px; 
     border-radius: 40px;
     border: solid;
-    background-image: url(/images/banner.png);
+    background-image: url(../images/banner.png);
     animation: fadeIn 1s;
 
 }
