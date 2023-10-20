@@ -20,6 +20,9 @@ function typingWordAnimation() {
     } else {
         setTimeout(() => {
             wordElement.textContent = "";
+
+            // Cool "trick" to reset the index. Once this reaches the last index in the array
+            // it resets back to 0, since were basically dividing it by its length and keeping the remainder.
             index = (index + 1) % words.length;
             charIndex = 0;
             typingWordAnimation();
