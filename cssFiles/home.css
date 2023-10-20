@@ -1,0 +1,107 @@
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+.banner {
+    width: calc(100% - 40px);
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    border-radius: 40px;
+    border: solid;
+    background-image: url(../images/banner.png);
+    animation: fadeIn 1s;
+
+}
+
+
+
+#banner-header {
+   font-size: 70px;
+   position: relative;
+   top: 85px;
+   left: 635px;
+   width: 800px;
+   
+}
+
+#banner-info {
+    position: relative;
+    width: 800px;
+    font-size: 50px;
+    top: 150px;
+    left: 635px;
+
+}
+
+
+#banner-dynamic-words {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(0, 0, 0, 0.7);       
+    background-color: rgba(103, 101, 101, 0.4);        
+    padding: 5px 10px;                            
+    border-radius: 5px;                            
+}
+
+
+@keyframes shake {
+    0% {transform: translate(0, 0) rotate(0);}
+    20% {transform: translate(-10px, -5px) rotate(-5deg);}
+    40% {transform: translate(10px, 5px) rotate(5deg);}
+    60% {transform: translate(-10px, -5px) rotate(-5deg);}
+    80% {transform: translate(10px, 5px) rotate(5deg);}
+    100% {transform: translate(0, 0) rotate(0);}
+}
+
+#banner-salt {
+    width: 600px;
+    position: relative;
+    bottom: 400px;
+    left: 50px;
+    animation: shake 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#team-header {
+    font-size: 80px;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+
+}
+
+#team-section {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.team-section p {
+    font-size: 50px;
+}
+
+.team-member {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    background-color: rgba(103, 101, 101, 0.4);     
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+    cursor: default
+}
+
