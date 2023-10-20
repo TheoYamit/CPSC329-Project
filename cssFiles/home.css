@@ -80,7 +80,6 @@
     border-radius: 20px;
     padding: 20px;
     display: inline-block;
-    margin-left: 90px;
 
 }
 
@@ -96,9 +95,13 @@
 .team-member {
     transition: transform 0.3s ease-in-out;
     display: inline-block;
+    background-color: rgba(103, 101, 101, 0.4);     
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .team-member:hover {
     transform: scale(1.1);
     cursor: default
 }
+
