@@ -14,10 +14,10 @@
 
 
 .banner {
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     height: 600px;
-    margin-left: 20px;
-    margin-right: 20px; 
+    margin-left: 10px;
+    margin-right: 10px; 
     border-radius: 40px;
     border: solid;
     background-image: url(../images/banner.png);
