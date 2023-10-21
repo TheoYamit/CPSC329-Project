@@ -8,16 +8,20 @@
     display: inline-block;
 }
 
+#logo-img {
+    width: 150px;
+}
+
 .header-h1 {
     font-size: 50px;
     display: inline-block;
 }
 
 .navigation {
-    margin-left: 150px;
+    margin-left: 190px;
 }
 
-.navigation a {
+.navigation a { 
     display: inline-block;
     margin-right: 20px;
 }
