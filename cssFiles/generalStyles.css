@@ -20,3 +20,22 @@ p {
     margin-right: 10px;
     font-family: "Cera Round Pro Bold"
 }
+
+
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2); 
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255,255,255,0.3); 
+}
