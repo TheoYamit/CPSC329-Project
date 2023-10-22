@@ -73,8 +73,24 @@
     animation-timing-function: ease-in-out;
 }
 
+@keyframes bounceAnimation {
+    0% {transform: scale(0.7);}
+    20% {transform: scale(1.05);}
+    40% {transform: scale(0.95)}
+    60% {transform: scale(1.02);}
+    80% {transform: scale(0.98)}
+    100% {transform: scale(1);}
+}
+
+.bounce-animation {
+    animation: bounceAnimation 1s; 
+}
+
 #motivation-section {
     margin-top: 100px;
+    margin-bottom: 150px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
 }
 
 #motivation-header {
@@ -96,7 +112,7 @@
 }
 
 .motivation-img:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     cursor: default
 }
 
@@ -130,3 +146,6 @@
     transform: scale(1.1);
     cursor: default
 }
+
+
+
