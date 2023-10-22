@@ -1,19 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('banner');
     const motivationSection = document.getElementById('motivation-section');
+    const boxElements = motivationSection.querySelectorAll('div.motivation-box')
 
     window.addEventListener('scroll', () => {
         const rect = banner.getBoundingClientRect();
 
         /* Trying to get it when the banner is halfway out of the screen?*/
-        const bannerHalfHeight = (banner.offsetHeight / 2) + 200;
+        const bannerHalfHeight = (banner.offsetHeight / 2) + 50;
 
         if (rect.bottom <= bannerHalfHeight) {
             motivationSection.style.opacity = '1';
-            motivationSection.classList.add('bounce-animation');
+
+            boxElements.forEach((element, index) => {
+                const delay = index * 0.4;
+                element.style.animationDelay = `${delay}s`;
+                element.classList.add('fade-in-element');
+            });
         } else {
             motivationSection.style.opacity = '0';
-            motivationSection.classList.remove('bounce-animation');
+            boxElements.forEach(element => {
+                element.classList.remove('fade-in-element');
+            });
+            
         }
     });
 });
