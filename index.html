@@ -21,8 +21,13 @@
     </head>
     <body>
         <header class="header">
-            <nav class="navigation1">
-                <a href="index.html" class="nav-button-wrapper">
+
+            <a class="logo-img" href="index.html">
+                <img src="images/textlogo.png" style="height: 150px;">
+            </a>
+        
+            <nav class="navigation">
+                <a href="index.html">
                     <button class="nav-button">
                         <i class="fa-solid fa-house" style ="margin-right: 5px;"></i> Home
                     </button>
@@ -33,16 +38,8 @@
                         <i class="fa-solid fa-circle-info" style="margin-right: 10px;"></i>Information
                     </button>
                 </a>
-            </nav>
 
-            <div class = "logo-img">
-                <a href=index.html>
-                    <img id="logo-img" src="images/SaltedHB.png" width="170px;">
-                </a>
-            </div>
-            
-            <nav class="navigation2">
-                <a href="quiz.html" class="nav-button-wrapper">
+                <a href="quiz.html">
                     <button class="nav-button">
                         <i class="fas fa-circle-question" style="margin-right: 5px;"></i> Quiz
                     </button>
@@ -52,7 +49,7 @@
                         <i class="fa-solid fa-lock" style="margin-right: 10px;"></i>Password Checker
                     </button>
                 </a>
-            </nav>   
+            </nav>
         </header>
 
         <main>
@@ -61,24 +58,64 @@
                 <p id="banner-info">This website aims to teach you about <span id="banner-dynamic-words"></span>.</p>
                 <img id="banner-salt" src="images/salt.png">
             </div>
+
+            <section id="motivation-section" class="motivation-section">
+                <h1 id="motivation-header">Why did we decide to make this website?</h1>
+
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-md-3 text-center mx-4 motivation-box">
+                            <img src="images/motivation1.png" class="img-fluid motivation-img">
+                            <p class="mt-2">With the rise of technology advancing at a rapid rate, and the threats towards
+                                data privacy improving and and increasing, it is becoming more apparent why security is becoming 
+                                a larger concern. Passwords are one of the main defenses protecting our data against attackers.
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 text-center mx-4 motivation-box">
+                            <img src="images/motivation2.png" class="img-fluid motivation-img">
+                            <p class="mt-2">Through a website, we hope to educate people regarding passwords, password salting, password hashing, and more, in an interesting 
+                                and interactive way. Educating people on the importance of passwords is a solid start on being secure online.
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 text-center mx-4 motivation-box">
+                            <img src="images/motivation3.png" class="img-fluid motivation-img">
+                            <p class="mt-2">This can serve as a way for a person to impact their social network in a positive way. A domino effect, where one person emphasizes collective responsiblity
+                                in cybersecurity, hopefully fostering a community of digital responsibility.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
             
-            <section id="team-section" class="team-section container" style="margin-top: 50px;">
+
+            <section id="team-section" class="team-section container-fluid" style="margin-top: 50px;">
                 <div class="d-flex justify-content-center">
                     <h1 id="team-header">Group 1 Members:</h1>
                 </div>
                 <div class="row text-center" style="margin-top: 20px;">
-                    <div class="col-md-6 mx-auto">
-                        <p class="team-member">Tania Rizwan</p>
-                        <p class="team-member">Theodore Yamit</p>
-                        <p class="team-member">Casey Sivec</p>
-                    </div>
-                    <div class="col-md-6 mx-auto">
-                        <p class="team-member">Aria Sharifnia</p>
-                        <p class="team-member">Aishan Irfan</p>
-                        <p class="team-member">Arnav Bhalla</p>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="team-member">Tania Rizwan</p>
+                                <p class="team-member">Theodore Yamit</p>
+                                <p class="team-member">Casey Sivec</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="team-member">Aria Sharifnia</p>
+                                <p class="team-member">Aishan Irfan</p>
+                                <p class="team-member">Arnav Bhalla</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+
             
         </main>
 
