@@ -73,6 +73,32 @@
     animation-timing-function: ease-in-out;
 }
 
+#motivation-section {
+    margin-top: 100px;
+}
+
+#motivation-header {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.motivation-box {
+    border: solid;
+    background-color: rgba(103, 101, 101, 0.4); 
+    border-radius: 40px;
+}
+
+.motivation-img {
+    border-radius: 40px;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.motivation-img:hover {
+    transform: scale(1.04);
+    cursor: default
+}
 
 #team-header {
     font-size: 80px;
