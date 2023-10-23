@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rect = banner.getBoundingClientRect();
 
         /* Trying to get it when the banner is halfway out of the screen?*/
+        /* Changed it to 50 cause it seems better tbh*/
         const bannerHalfHeight = (banner.offsetHeight / 2) + 50;
 
         if (rect.bottom <= bannerHalfHeight) {

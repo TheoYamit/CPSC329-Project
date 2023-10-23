@@ -65,10 +65,10 @@
 }
 
 #banner-salt {
-    width: 600px;
+    width: 500px;
     position: relative;
-    bottom: 400px;
-    left: 50px;
+    bottom: 350px;
+    left: 120px;
     animation: shake 1s infinite;
     animation-timing-function: ease-in-out;
 }
