@@ -1,4 +1,3 @@
-
 // The words the dynamic text will be looping through
 const words = ["security", "passwords", "salting passwords", "hashing passwords"];
 const wordElement = document.getElementById("banner-dynamic-words");
