@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
             motivationHeader.classList.add('fade-in-element');
            
             boxElements.forEach((element, index) => {
-                // Making the timing quicker tho becuase with 6 elements, its too slow
-                const delay = index * 0.2;
+                // Making the timing quicker tho becuase with 6 elements, its too slow.
+                const delay = index * 0.3;
                 element.style.animationDelay = `${delay}s`;
                 element.classList.add('fade-in-element');
 
