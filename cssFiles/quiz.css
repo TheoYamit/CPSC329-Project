@@ -46,6 +46,7 @@
     row-gap: 5%;
     flex-wrap: wrap;
     justify-content: space-evenly;
+   padding: 2%;
 }
 
 .button {
@@ -55,17 +56,18 @@
     background-color: transparent;
     color: white;
     padding: 0.5%;
+    margin: 1%;
 }
 
 /*hover animations*/
-.button:hover{
+.button:hover, #next-button:hover{
     background-color: white;
     color: black;
     transition: all 0.3s ease;
 }
 
 /*select animation*/
-.button:focus{
+.button:focus, #next-button:focus{
     background-color: white;
     color: black;
     outline: none;
@@ -74,6 +76,18 @@
     box-shadow: inset 0px 0px 5px #c1c1c1;
 
 }
+
+#next-button{
+    width: 6%;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5%;
+    position: relative;
+    left: 88%;   
+}
+
 /*-------------------------------------------------------------*/
 /*CSS for the text*/
 #question-header {
