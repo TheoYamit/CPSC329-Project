@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Salted Hashbrowns</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="cssFiles/general_styles.css">
+        <linK rel="stylesheet" href="cssFiles/header_main.css">
+        <link rel="stylesheet" href="cssFiles/information.css">
+    </head>
+
+    <body style="background: radial-gradient(circle at center, rgba(35,35,41,255), rgba(17,17,22,255));"><
+        <header class="header">
+            <img style="margin-left: 160px; width: 120px; display: inline-block; margin-right: 110px;"src="images/logo.png">
+            
+            <nav class="navigation">
+                <a href="index.html">
+                    <button class="nav-button">
+                        <i class="fa-solid fa-house" style ="margin-right: 5px;"></i> HOME
+                    </button>
+                </a>
+
+                <a href="information.html">
+                    <button class="nav-button" style="color: rgb(241, 189, 165)";>
+                        <i class="fa-solid fa-circle-info" style="margin-right: 10px;"></i>INFORMATION
+                    </button>
+                </a>
+
+                <a href="quiz.html">
+                    <button class="nav-button">
+                        <i class="fas fa-circle-question" style="margin-right: 5px;"></i> QUIZ
+                    </button>
+                </a>
+                <a href="passwordChecker.html" >
+                    <button class="nav-button" >
+                        <i class="fa-solid fa-lock" style="margin-right: 10px;"></i>PASSWORD CHECKER
+                    </button>
+                </a>
+            </nav>
+        </header>
+    
+        <main>
+            <div id = "welcome">
+                <p class = "heading-main">
+                    WELCOME TO OUR KNOWLEDGE BASE!
+                </p>
+                <p class = "info">
+                    Here, you'll learn the FUNdamental concepts about passwords, hashes and salts. 
+                    Then you can test your knowledge in our <a href = "quiz.html"> Quiz page</a>
+                </p>
+            </div>
+            <div id = "passwords">
+                <h1> Passwords </h1>
+                <h2> What is a password? And why does it matter? </h2> 
+                <p> A password is a (usually) secret combination of characters (letters, numbers, r@nd0m symb01s) that is used to authenticate a user's identity, 
+                    and therefore provide controlled access to services. 
+                    Passwords ensure that only authorized individuals can gain access to protected information. <br>
+                    So, if a password falls into the hands of the wrong person, they can falsely authenticate themselves as the intended user, gain access to confidential information, steal someone's identity, all the money to their name, and so much more… 
+                </p> 
+                <p>
+                    You may be wondering; how do I keep my password secure? 
+                    Here's some guidelines from the <a href = "https://pages.nist.gov/800-63-3/sp800-63b.html#sec5National" target = '_blank' rel="noopener noreferrer"> 
+                    National Institute of Standards and Technology (NIST): </a>
+                </p>
+                <ol>
+                    <li> Avoid complexity using l33t speak, or adding numbers to some 'base' word (this makes it easier for hackers!)</li>
+                    <li> Use at least 8 characters, but the longer the password, the better it is. </li> 
+                    <li> Don't pick a word, choose them randomly! </li> 
+                    <li> Use different characters: upper-case, lower-case, numbers, symbols, Unicode… </li>
+                    <li> Reject any passwords that are commonly known (see this for reference), context-specific words (related to the service). 
+                        It's better to just not use words!</li>
+                    <li> Don't use any hints or secret questions in your password. Your mother's maiden name is not a secret, neither is your dog's first name…</li>
+                    <li> Use a Password Manager, and Multi-Factor Authentication (MFA)</li>
+                </ol>
+                <p>
+                    Now that you know about the importance of picking a good password, try our Password Checker!
+                </p>
+
+            </div>
+
+            <div id = "hashing">
+                <h1> Hashes </h1>
+                <p> this section explaisn what a hash is</p>
+                <p> types of hash functions </p>
+            </div>
+
+            <div id = "salts">
+                <h1> Salting </h1>
+                <p> This section talks about salts to make the process more secure </p>
+            </div>
+        </main>
+    </body>
+        
+</html>
