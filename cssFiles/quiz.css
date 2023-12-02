@@ -60,7 +60,7 @@
 }
 
 /*hover animations*/
-.button:hover, #next-button:hover{
+.button:hover:not([disabled]), #next-button:hover{
     background-color: white;
     color: black;
     transition: all 0.3s ease;
@@ -106,4 +106,12 @@
     margin-right: auto;
     color: white;
     font-family: Montserrat, Arial;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
 }
