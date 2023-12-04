@@ -1,4 +1,28 @@
 # CPSC329-Project
-CPSC329 Website For Project
 
-Designed on a screen for 1920x1080, with a scale of 125% (which is rougly 1536px in width). If we want to account for every screen size it will take too long. So maybe we just tell whoever is marking it to use these settings.
+## Introduction
+This repository contains the CPSC329 project, a comprehensive web application providing various functionalities related to cybersecurity education.
+
+## Setup
+For the best viewing experience, use a screen resolution of 1920x1080 with a scale of 125%.
+
+## Features
+- Home Page (`index.html`): The main landing page of the website.
+- Information Page (`information.html`): Contains educational content on cybersecurity.
+- Password Checker (`passwordChecker.html`): A tool to evaluate the strength of passwords.
+- Quiz (`quiz.html`): An interactive quiz to test cybersecurity knowledge.
+- Questions (`questions.html`): A page for users to submit their questions.
+
+## Installation
+No installation is required. Simply clone the repository and open the HTML files in a web browser.
+
+## Usage
+Navigate through the website using the links provided in the home page. Each page serves a specific function, offering interactive and informative content on cybersecurity.
+
+## Contributions 
+- Tania Rizwan
+- Theodore Yamit
+- Casey Sivec
+- Aria Sharifnia
+- Aishan Irfan
+- Arnav Bhalla
