@@ -98,6 +98,7 @@ const nextButton = document.getElementById("next-button");
 
 let currentQuestionIndex = 0;
 let score = 0;
+var percentile;
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -150,23 +151,71 @@ function selectAnswer(e){
     
 }
 
-function showScore(){
+async function showScore(){
     resetState();
-    headerElement.innerHTML = "Results";
-    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
     for(i = 0; i < answerButtons.length; i++){
         answerButtons[i].style.visibility = "hidden";
     }
+    headerElement.innerHTML = "Results";
+    questionElement.innerHTML = "Loading results..."
+    let percentile = await compareScores();
+    let average = await averageScores();
+    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!\n
+    This is better than ${percentile.toFixed(2)}% of people!
+    The average score is ${average.toFixed(2)}!`;
+
     nextButton.innerHTML = "Restart";
     nextButton.style.display = "block";
 }
 
-function handleNextButton(){
+async function sendScore() {
+    spreadSheetUrl = "https://docs.google.com/spreadsheets/d/1tcvUqYn6unzBnMs4B2bnjkTJAlLvaaD1AFF-Z3Ila-M/edit#gid=0"
+    sheetApiKey = "AIzaSyA2GgNg9oz--cLP8UOrLK8lheyv39uDHrg"
+
+    fetch("https://script.google.com/macros/s/AKfycbyTCm1fFJVrjx5YxlF0xvXURV27NQtVG3BaSbGcJ_11_sgi9SdbQsBEk3ZQfvOHRp_M6A/exec", {
+        method: 'POST',
+        contentType: 'application/json',
+        body: JSON.stringify({score: score})
+    })
+        .then(response => response.json())
+        // Debugging purposes cause it wasn't working
+        .catch(error => console.error('Error', error))
+    
+}
+
+async function fetchScores() {
+    try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbyTCm1fFJVrjx5YxlF0xvXURV27NQtVG3BaSbGcJ_11_sgi9SdbQsBEk3ZQfvOHRp_M6A/exec");
+        return await response.json();
+    } catch (error) {
+        return console.error('Error, error');
+    }
+}
+
+async function compareScores() {
+    let rawScores = await fetchScores();
+    let scores = rawScores.map(Number);
+    let totalNumberOfScores = scores.length;
+    let worseScoresThanCurrent = scores.filter(s => s < score).length;
+    return (worseScoresThanCurrent / totalNumberOfScores) * 100;
+}
+
+async function averageScores() {
+    let rawScores = await fetchScores();
+    let scores = rawScores.map(Number);
+    let totalNumberOfScores = scores.length;
+    let totalSum = scores.reduce((sum, s) => sum + s, 0);
+    return totalSum / totalNumberOfScores;
+}
+
+
+async function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
-    }else{
-        showScore();
+    } else {
+        await sendScore();
+        await showScore();
     }
 }
 
@@ -179,3 +228,6 @@ nextButton.addEventListener("click", ()=>{
 });
 
 startQuiz();
+
+
+
