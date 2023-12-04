@@ -15,6 +15,8 @@ For the best viewing experience, use a screen resolution of 1920x1080 with a sca
 
 ## Installation
 No installation is required. Simply clone the repository and open the HTML files in a web browser.
+Or visit this link:
+<https://theoyamit.github.io/CPSC329-Project/>
 
 ## Usage
 Navigate through the website using the links provided in the home page. Each page serves a specific function, offering interactive and informative content on cybersecurity.
