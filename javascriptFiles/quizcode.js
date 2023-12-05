@@ -81,12 +81,12 @@ const questions = [
         ]
     },
     {
-        question: "What is the key difference between symmetric and asymmetric encryption?",
+        question: "What is the concept of 'bits of entropy' in the context of passwords?",
         answers:[
-            {test: "Symmetric encryption uses a single key, while asymmetric uses a pair of keys", correct: true},
-            {test: "Symmetric encryption is newer than asymmetric encryption", correct: false},
-            {test: "Symmetric encryption is primarily used for hashing", correct: false},
-            {test: "Asymmetric encryption cannot encrypt large amounts of data", correct: false},
+            {test: "It is a measure of password strength" , correct: true},
+            {test: "It is the amount of memory required to store a password", correct: false},
+            {test: "It is the speed of encrypting a password", correct: false},
+            {test: "It is the maximum bit-length a password can have", correct: false},
         ]
     }
 
