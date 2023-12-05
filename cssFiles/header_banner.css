@@ -113,7 +113,6 @@
     transform: scaleX(-1);
     animation: shake 1s infinite;
     animation-timing-function: ease-in-out;
-    z-index: 1;
 }
 
 #banner-lock {
