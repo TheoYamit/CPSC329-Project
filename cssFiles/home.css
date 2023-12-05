@@ -45,8 +45,8 @@
 }
 
 .motivation-img {
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .motivation-card {
