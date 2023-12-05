@@ -12,7 +12,7 @@
 }
 
 .navigation {
-    margin-left: 300px;
+    margin-left: 10%;
 }
 
 .navigation a { 
@@ -108,8 +108,8 @@
 #banner-salt {
     width: 420px;
     position: absolute;
-    top: 150px;
-    right: 170px;
+    top: 15vh;
+    left: 70vw;
     transform: scaleX(-1);
     animation: shake 1s infinite;
     animation-timing-function: ease-in-out;
@@ -118,8 +118,8 @@
 #banner-lock {
     color: #ffffff;
     position: relative;
-    top: 250px;
-    left: 970px;
+    top: 24vh;
+    left: 72vw;
 
 }
 
